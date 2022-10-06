@@ -642,7 +642,7 @@ def build_gene_id_name_map(ref_mgr):
 
     return id_name_map
 
-def ca_pa(bed, ref, tsv):
+def capatsv(bed, ref, tsv):
     ref_mgr = ReferenceManager(ref)
     #sort the peaks on the fasta index file in the reference
     #which is not numerically sorted btw
@@ -677,7 +677,7 @@ def parse_args():
 
 def main():
     args = parse_args()
-    ca_pa(args.bed, args.ref, args.tsv)
+    capatsv(args.bed, args.ref, args.tsv)
 
 if __name__ == "__main__":
     main()
