@@ -8,6 +8,8 @@ Cellranger ATAC peak annotation, for use with BED peak input files. Functionalit
 pip3 install ca_pa
 ```
 
+The script depends on a recent version of bedtools, was tested with 2.30.0 matching the one distributed within Cellranger ATAC 2.1.0.
+
 ## Usage
 
 Once installed, the peak annotation script becomes callable via the command line
