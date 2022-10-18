@@ -664,7 +664,9 @@ def capatsv(bed, ref, tsv):
                     if ensure_binary(c) in gene_id_name_map:
                         c = gene_id_name_map[ensure_binary(c)]
                 out.write(ensure_binary(c))
-                out.write(b"\t")
+                #only insert a tab if it's not the last column
+                if i<5:
+                    out.write(b"\t")
             out.write(b"\n")
 
 def parse_args():

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
 	name='capatsv',
-	version='0.0.1',
+	version='0.0.2',
 	description='Cellranger ATAC Peak Annotation, sourced from Cellranger ATAC v2.1.0',
 	url='https://github.com/Teichlab/capatsv',
 	packages=find_packages(),
